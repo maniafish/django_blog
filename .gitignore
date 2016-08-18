@@ -3,3 +3,4 @@ __pycache__
 mppython/
 db.sqlite3
 .DS_Store
+*.swp
