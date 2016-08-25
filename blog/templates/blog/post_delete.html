@@ -1,0 +1,12 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+        <p>确定删除？</p>
+        <form method="POST" class="post-form">{% csrf_token %}
+            <button type="submit" class="btn btn-default" name="yes">Yes</button>
+            <button type="submit" class="btn btn-default" name="no">No</button>
+        </form>
+    </div>
+{% endblock %}
